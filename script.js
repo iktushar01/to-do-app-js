@@ -14,13 +14,26 @@ const inputBtn = document.getElementById('input_btn').addEventListener('click', 
         li.appendChild(span);
     }
     inputBox.value = '';
+    saveData();
 });
 
 todo_list_container.addEventListener('click', function(event){
     if(event.target.tagName === 'LI'){
         event.target.classList.toggle('checked');
+        saveData();
     }
     else if(event.target.tagName === 'SPAN'){
         event.target.parentElement.remove();
+        saveData();
     }
-});
+}, false);
+
+
+function saveData(){
+    localStorage.setItem('data', todo_list_container.innerHTML);
+}
+
+function showTask(){
+    todo_list_container.innerHTML = localStorage.getItem("data");
+}
+showTask();

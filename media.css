@@ -1,0 +1,56 @@
+/* Responsive Styles for To-Do App */
+
+@media (max-width: 768px) {
+    .todo_app {
+      max-width: 90%;
+      padding: 30px 20px 60px;
+    }
+    .todo_app h2 {
+      font-size: 1.5rem;
+    }
+    .todo_app h2 img {
+      width: 30px;
+    }
+    .row {
+      flex-direction: column;
+      padding: 15px;
+      gap: 10px;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .todo_app {
+      padding: 20px 15px 50px;
+    }
+    .todo_app h2 {
+      font-size: 1.2rem;
+    }
+    .row {
+      padding: 10px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 14px;
+    }
+    ul li {
+      font-size: 15px;
+      padding: 10px 5px 10px 40px;
+    }
+    ul li::before {
+      width: 24px;
+      height: 24px;
+      top: 6px;
+      left: 8px;
+    }
+    ul li span {
+      width: 35px;
+      height: 35px;
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+  

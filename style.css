@@ -26,6 +26,7 @@
   align-items: center;
   margin-bottom: 20px;
   font-size: 1.8rem;
+ 
 }
 .todo_app h2 img {
   width: 40px;
@@ -99,7 +100,6 @@ ul li.checked{
 ul li.checked::before{
     background-image: url(./img/checked.png);
 }
-
 ul li span{
     position: absolute;
     right: 0;
@@ -112,9 +112,7 @@ ul li span{
     transition: color 0.3s ease-in-out;
     text-align: center;
     line-height: 40px;
-
 }
-
 ul li span:hover{
     color: red;
     background: #dbdbdb ;
